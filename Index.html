@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Lato:wght@400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&display=swap" rel="stylesheet">
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="Index.css">
+  <title>Che? Kharcho!</title>
+  
+</head>
+<body>
+  <!--------- NAVBAR -------->
+  <header id="home">
+  <nav class="navbar" >
+    <div class="logo">Che? Kharcho!</div>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="menu.html">Menu</a></li>
+      <li><a href="event.html">Events</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button class="reserve-btn"> <a href="reservation.html">Reserve Now</a></button>
+  </nav>
+</header>
+  
+<!----------- HERO ----------->
+<section>
+  <div class="slider">
+    <div class="slides" id="slides">
+      <div class="slide" style="background-image: url('Images/restaurant-interior.jpg');">
+        <div class="overlay"></div>
+        <div class="text">
+          <h1 >Welcome to <br> Che? Kharcho!</h1>
+          <h3>Caucasian and Black Sea cuisine</h3>
+          <button>LOOK MENU</button>
+        </div>
+      </div>
+      <div class="slide" style="background-image: url('Images/top-view-grilled-shrimp-stick-with-salad-leaves.jpg');">
+        <div class="overlay"></div>
+        <div class="text">
+          <h1>Delicious Food Awaits</h1>
+          <button>EXPLORE</button>
+        </div>
+      </div>
+      <div class="slide" style="background-image: url('Images/man-are-cutting-grilled-fish-with-homemade-potato-lemon-bread-sauce.jpg');">
+        <div class="overlay"></div>
+        <div class="text">
+          <h1>Experience Fine Dining</h1>
+          <button>BOOK NOW</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="nav">
+      <button id="prev">&#10094;</button>
+      <button id="next">&#10095;</button>
+    </div>
+  </div>
+ </section>   
+
+
+<!----------- MENU -----------> 
+<section class="menu-section" id="menu">
+  <div class="menu-text">
+    <h2>OUR MENU</h2>
+  </div>
+
+  <div class="menu-images">
+  <div class="menu-item">
+    <img src="Images/vegetable-salad-with-caviar-shrimps.jpg" alt="Lunch">
+    <button class="menu-btn">Lunch</button>
+  </div>
+  <div class="menu-item">
+    <img src="images/various-dessert-glass-white-wine.jpg" alt="Dinner">
+    <button class="menu-btn">Dinner</button>
+  </div>
+  <div class="menu-item">
+    <img src="images/front-close-view-dry-red-wine-glass-bottle-snack-conifer-cone-gray-background.jpg" alt="Wines">
+    <button class="menu-btn">Wines</button>
+  </div>
+  <div class="menu-item">
+    <img src="images/sweet-delight-with-fruits-table.jpg" alt="Dessert">
+    <button class="menu-btn">Dessert</button>
+  </div>
+</div>
+</section>
+
+<!----------- EVENTS ----------->
+<section class="events" id="events">
+  <h2 class="section-title">Upcoming Events</h2>
+
+  <div class="events-container">
+    <!-- Event 1 -->
+    <div class="event-card">
+      <img src="Images/wide-selection-apetizers-including-olive-cheese-salad-varieties.jpg" alt="Lunch">
+      <button class="event-btn">Lunch</button>
+      <div class="event-info">
+        <h3>Healthy Lunch Buffet</h3>
+        <p>Join us for a delicious, healthy lunch experience featuring seasonal ingredients and vibrant flavors.</p>
+      </div>
+       <div class="countdown" data-date="2026-02-10T12:00:00"></div>
+    </div>
+
+    <!-- Event 2 -->
+    <div class="event-card">
+      <img src="Images/cheese-plate-with-crackers.jpg" alt="Dinner">
+      <button class="event-btn">Dinner</button>
+      <div class="event-info">
+        <h3>Elegant Dinner Night</h3>
+        <p>Enjoy a candlelit dinner with live music and exquisite dishes curated by our chefs. Lorem ipsum dolor.</p>
+      </div>
+       <div class="countdown" data-date="2026-02-15T19:30:00"></div>
+    </div>
+
+    <!-- Event 3 -->
+    <div class="event-card">
+      <img src="Images/set-salad-fried-eggs-pastry-delicious-breakfast-table-white-background-high-angle-view.jpg" alt="Brunch">
+      <button class="event-btn">Brunch</button>
+      <div class="event-info">
+        <h3>Sunday Brunch Special</h3>
+        <p>Relax and indulge in our signature Sunday brunch featuring fresh pastries and tropical juices.</p>
+      </div>
+      <div class="countdown" data-date="2026-02-20T10:00:00"></div>
+    </div>
+  </div>
+</section>
+
+<!------- GALLERY SECTION ------->
+<section id="gallery" class="gallery-section">
+  <h2 class="gallery-title"><span>Our</span> Gallery</h2>
+  <p class="gallery-subtitle">A glimpse into our ambiance, cuisine, and unforgettable experiences</p>
+
+  <div class="gallery-grid">
+    <div class="gallery-card">
+      <img src="Images/restaurant-interior.jpg" alt="Fine Dining Hall">
+      <div class="overlay"><span>Fine Dining Hall</span></div>
+    </div>
+    <div class="gallery-card">
+      <img src="Images/grilled-fish-fillet-served-top-couscous-salad-with-bell-peppers.jpg" alt="Signature Dishes">
+      <div class="overlay"><span>Signature Dishes</span></div>
+    </div>
+    <div class="gallery-card">
+      <img src="Images/wide-selection-apetizers-including-olive-cheese-salad-varieties.jpg" alt="Fine Dining">
+      <div class="overlay"><span>Fine Dining</span></div>
+    </div>
+    <div class="gallery-card">
+      <img src="Images/front-close-view-dry-red-wine-glass-bottle-snack-conifer-cone-gray-background.jpg" alt="Wine Experience">
+      <div class="overlay"><span>Wine Experience</span></div>
+    </div>
+    <div class="gallery-card">
+      <img src="Images/top-view-grilled-shrimp-stick-with-salad-leaves.jpg" alt="Chef’s Specials">
+      <div class="overlay"><span>Chef’s Specials</span></div>
+    </div>
+    <div class="gallery-card">
+      <img src="Images/various-dessert-glass-white-wine.jpg" alt="Dessert Artistry">
+      <div class="overlay"><span>Dessert Artistry</span></div>
+    </div>
+  </div>
+  </section>
+
+  <!--------- ABOUT SECTION --------->
+<section id="about" class="about-section">
+  <div class="about-container">
+    <div class="about-image">
+      <img src="images/side-view-red-wine-bottle-celebration-empty-glass-black-grape-conifer-cone-dark-background.jpg" alt="Restaurant Interior">
+    </div>
+
+    <div class="about-content">
+      <h2>About <span>Che? Kharcho!</span></h2>
+      <p>
+        Welcome to <strong>Che? Kharcho!</strong> — where tradition meets taste.  
+        Our restaurant brings you the warmth of homemade recipes blended with 
+        a modern dining experience. From cozy interiors to handpicked ingredients,  
+        everything here is designed to make you feel at home — but with a touch of elegance.
+      </p>
+      <p>
+        Visit us and experience culinary comfort in the heart of the city.
+      </p>
+
+     <div class="map-container">
+  <iframe 
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1343.9973999523477!2d40.258377!3d43.683926!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40f42f51a50a6b97%3A0x51d7769384d45a1!2sChe%3F%20Kharcho!5e0!3m2!1sen!2s!4v1700000000000"
+    width="100%" height="400" style="border:0; border-radius: 15px; box-shadow: 0 0 20px rgba(0,0,0,0.2);" 
+    allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+  </iframe>
+</div>
+
+    </div>
+  </div>
+</section>
+
+<!-------- Reservation-of-table -------->
+<section id="reservation" class="reservation-section">
+  <div class="reservation-container">
+    <div class="reservation-content">
+      <div class="reservation-text">
+        <h3 class="reservation-subtitle">Reservation</h3>
+        <h2 class="reservation-title">Book Table</h2>
+
+        <form id="reservationForm" class="reservation-form">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="date">Date</label>
+              <input type="date" id="date" name="date" required />
+            </div>
+
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" placeholder="Name" required />
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="time">Time</label>
+              <select id="time" name="time" required>
+                <option value="9:00">9:00 AM</option>
+                <option value="10:00">10:00 AM</option>
+                <option value="12:00">12:00 PM</option>
+                <option value="2:00">2:00 PM</option>
+                <option value="7:00">7:00 PM</option>
+                <option value="9:00">9:00 PM</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="phone">Phone</label>
+              <input type="tel" id="phone" name="phone" placeholder="Phone" required />
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="people">People</label>
+              <select id="people" name="people" required>
+                <option value="1 Person">1 Person</option>
+                <option value="2 People">2 People</option>
+                <option value="3 People">3 People</option>
+                <option value="4 People">4 People</option>
+                <option value="5+ People">5+ People</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="Email" required />
+            </div>
+          </div>
+
+          <button type="submit" class="book-btn">Book Table</button>
+        </form>
+      </div>
+
+      <div class="reservation-image">
+        <img src="Images/concept-table-setting-christmas-holidays-beautiful-stylish-decorated-table-is-waiting-guests-holiday - Copy.jpg" alt="Restaurant Table" />
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Confirmation Popup -->
+<div id="confirmationPopup" class="popup hidden">
+  <div class="popup-content">
+    <h3>🎉 Reservation Confirmed!</h3>
+    <p>Your table has been successfully booked. We look forward to serving you!</p>
+    <button id="closePopup">Close</button>
+  </div>
+</div>
+
+<!------- Footer-Section  -------->
+<footer class="footer">
+  <div class="footer-container">
+    
+    <!-- About Section -->
+    <div class="footer-section about">
+      <h3>About Us</h3>
+      <p>
+        Welcome to <strong>Che? Kharcho!</strong> — a place where taste, warmth, and style come together. 
+        Enjoy a cozy dining experience filled with rich flavors and unforgettable moments.
+      </p>
+    </div>
+
+    <!-- Quick Links -->
+    <div class="footer-section links">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#events">Events</a></li>
+        <li><a href="#reservation">Reservation</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- Contact Info -->
+    <div class="footer-section contact" id="contact">
+      <h3>Contact Us</h3>
+      <p><i class="fa fa-map-marker"></i> 35 Olympic Records St., Rosa Khutor, Krasnaya Polyana, Sochi 354392, Russia</p>
+      <p><i class="fa fa-phone"></i> +7 (862) 243-97-18</p>
+      <p><i class="fa fa-envelope"></i>  kirill.oskorbin@wrf.su</p>
+    </div>
+
+    <!-- Social Media -->
+    <div class="footer-section social">
+      <h3>Follow Us</h3>
+      <div class="social-icons">
+        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2025 <strong>Che? Kharcho!</strong> | Crafted with ❤️ by Fatooba</p>
+  </div>
+</footer>
+
+
+  <script src="Index.js"></script>
+</body>
+</html>
